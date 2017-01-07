@@ -1,4 +1,4 @@
-const {parseRawCommit} = require('conventional-changelog');
+const {parseRawCommit} = require('conventional-changelog/lib/git');
 
 module.exports = function(pluginConfig, {commits}, cb) {
     let type = null;
